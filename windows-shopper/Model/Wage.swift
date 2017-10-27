@@ -17,5 +17,5 @@ class Wage{
 // Good functions accept input and return output
 //Bad functions set global variables and rely on other functions to work
 
-//Always rund your unit tests before you: 1. create pull req. 2. Deploy to device 3. Send app to beta testers 4. submit apps to App store
+//Always run your unit tests before you: 1. create pull req. 2. Deploy to device 3. Send app to beta testers 4. submit apps to App store
 
