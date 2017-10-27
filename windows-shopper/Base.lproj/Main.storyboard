@@ -34,7 +34,17 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="858-rj-rJa" customClass="CurrencyTxtField" customModule="windows_shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="215" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="CMk-Xv-la2"/>
+                                    <constraint firstAttribute="height" constant="40" id="rBk-Mi-30Q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,12 +55,19 @@
                             <constraint firstItem="yPG-Ts-Buc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="QAd-QM-K1A"/>
                             <constraint firstItem="K7a-py-Kp7" firstAttribute="top" secondItem="yPG-Ts-Buc" secondAttribute="bottom" constant="35" id="bhU-gm-bEe"/>
                             <constraint firstItem="yPG-Ts-Buc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fmJ-rj-KJy"/>
+                            <constraint firstItem="858-rj-rJa" firstAttribute="top" secondItem="K7a-py-Kp7" secondAttribute="bottom" constant="25" id="gEb-yj-BZM"/>
                             <constraint firstItem="vC1-Wi-bfx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hZ2-FD-YGl"/>
                             <constraint firstItem="vC1-Wi-bfx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i8Q-PR-Y01"/>
+                            <constraint firstItem="858-rj-rJa" firstAttribute="trailing" secondItem="K7a-py-Kp7" secondAttribute="trailing" id="jEc-8n-w7e"/>
+                            <constraint firstItem="858-rj-rJa" firstAttribute="leading" secondItem="K7a-py-Kp7" secondAttribute="leading" id="uYg-3L-itC"/>
                             <constraint firstItem="vC1-Wi-bfx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="y2t-cr-Dic"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="858-rj-rJa" id="ih9-qL-ZCR"/>
+                        <outlet property="wageTxt" destination="K7a-py-Kp7" id="hC9-3k-vn4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
